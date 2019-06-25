@@ -25,9 +25,9 @@ function toggleChangelog() {
     showChangelog = showChangelog == false ? true : false;
     if (showChangelog == true) {
         $("#changelog-wrapper").show(50);
-        $("#changelog").html(`<i class="fas fa-caret-down"></i> Hide Changelog`);
+        $("#changelog").html(`<i class="fas fa-caret-down"></i> 隱藏日誌`);
     } else {
-        $("#changelog").html(`<i class="fas fa-caret-right"></i> Show Changelog`);
+        $("#changelog").html(`<i class="fas fa-caret-right"></i> 顯示日誌`);
         $("#changelog-wrapper").hide(50);
     }
 }
@@ -36,9 +36,9 @@ function toggleInstructions() {
     showChangelog = showChangelog == false ? true : false;
     if (showChangelog == true) {
         $("#instructions-wrapper").show(50);
-        $("#instructions").html(`<i class="fas fa-caret-down"></i> Hide Instructions`);
+        $("#instructions").html(`<i class="fas fa-caret-down"></i> 隱藏說明`);
     } else {
-        $("#instructions").html(`<i class="fas fa-caret-right"></i> Show Instructions`);
+        $("#instructions").html(`<i class="fas fa-caret-right"></i> 顯示說明`);
         $("#instructions-wrapper").hide(50);
     }
 }
