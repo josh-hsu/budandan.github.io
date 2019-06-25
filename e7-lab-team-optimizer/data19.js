@@ -1,6 +1,6 @@
 var allHeroes = [
     {
-        "name": "Achates",
+        "name": "雅卡泰絲",
         "chat1": "comforting_cheer",
         "chat2": "myth",
         "advice": 8,
@@ -27,7 +27,7 @@ var allHeroes = [
         "unique_comment": 0
     },
     {
-        "name": "Adlay",
+        "name": "亞迪賴",
         "chat1": "heroic_tale",
         "chat2": "self_indulgent",
         "advice": 0,
@@ -54,7 +54,7 @@ var allHeroes = [
         "unique_comment": 3
     },
     {
-        "name": "Aither",
+        "name": "埃德勒",
         "chat1": "heroic_tale",
         "chat2": "advice",
         "advice": 2,
@@ -81,7 +81,7 @@ var allHeroes = [
         "unique_comment": 0
     },
     {
-        "name": "Alexa",
+        "name": "雅莉莎",
         "chat1": "reality_check",
         "chat2": "happy_memory",
         "advice": 4,
@@ -108,7 +108,7 @@ var allHeroes = [
         "unique_comment": 0
     },
     {
-        "name": "Angelic Montmorancy",
+        "name": "守護天使蒙茉朗西",
         "chat1": "comforting_cheer",
         "chat2": "sad_memory",
         "advice": 3,
@@ -135,7 +135,7 @@ var allHeroes = [
         "unique_comment": 2
     },
     {
-        "name": "Angelica",
+        "name": "安潔莉卡",
         "chat1": "myth",
         "chat2": "comforting_cheer",
         "advice": 3,
@@ -162,7 +162,7 @@ var allHeroes = [
         "unique_comment": 0
     },
     {
-        "name": "Aramintha",
+        "name": "雅拉敏塔",
         "chat1": "food_story",
         "chat2": "complain",
         "advice": 5,
@@ -189,7 +189,7 @@ var allHeroes = [
         "unique_comment": 1
     },
     {
-        "name": "Arbiter Vildred",
+        "name": "執行官維德瑞",
         "chat1": "criticism",
         "chat2": "self_indulgent",
         "advice": 1,
@@ -216,7 +216,7 @@ var allHeroes = [
         "unique_comment": 1
     },
     {
-        "name": "Armin",
+        "name": "亞敏",
         "chat1": "heroic_tale",
         "chat2": "gossip",
         "advice": 0,
@@ -243,7 +243,7 @@ var allHeroes = [
         "unique_comment": 1
     },
     {
-        "name": "Arowell",
+        "name": "雅洛薇",
         "chat1": "sad_memory",
         "chat2": "dream",
         "advice": 2,
@@ -270,7 +270,7 @@ var allHeroes = [
         "unique_comment": 3
     },
     {
-        "name": "Assassin Cartuja",
+        "name": "殺手卡爾圖哈",
         "chat1": "reality_check",
         "chat2": "food_story",
         "advice": 5,
@@ -297,7 +297,7 @@ var allHeroes = [
         "unique_comment": 3
     },
     {
-        "name": "Assassin Cidd",
+        "name": "殺手席德",
         "chat1": "sad_memory",
         "chat2": "heroic_tale",
         "advice": 0,
@@ -324,7 +324,7 @@ var allHeroes = [
         "unique_comment": 1
     },
     {
-        "name": "Assassin Coli",
+        "name": "殺手可麗",
         "chat1": "reality_check",
         "chat2": "gossip",
         "advice": 4,
@@ -351,7 +351,7 @@ var allHeroes = [
         "unique_comment": 3
     },
     {
-        "name": "Auxiliary Lots",
+        "name": "輔助型拉茲",
         "chat1": "dream",
         "chat2": "complain",
         "advice": 4,
@@ -378,7 +378,7 @@ var allHeroes = [
         "unique_comment": 2
     },
     {
-        "name": "Azalea",
+        "name": "雅潔里亞",
         "chat1": "heroic_tale",
         "chat2": "advice",
         "advice": 0,
@@ -405,7 +405,7 @@ var allHeroes = [
         "unique_comment": 3
     },
     {
-        "name": "Baal and Sezan",
+        "name": "巴爾 塞尚",
         "chat1": "joyful_memory",
         "chat2": "bizarre_story",
         "advice": 5,
@@ -432,7 +432,7 @@ var allHeroes = [
         "unique_comment": 5
     },
     {
-        "name": "Baiken",
+        "name": "梅瑄",
         "chat1": "food_story",
         "chat2": "belief",
         "advice": -1,
@@ -459,7 +459,7 @@ var allHeroes = [
         "unique_comment": 5
     },
     {
-        "name": "Basar",
+        "name": "巴薩爾",
         "chat1": "heroic_tale",
         "chat2": "reality_check",
         "advice": 4,
@@ -486,7 +486,7 @@ var allHeroes = [
         "unique_comment": 0
     },
     {
-        "name": "Bask",
+        "name": "巴思克",
         "chat1": "belief",
         "chat2": "sad_memory",
         "advice": 0,
@@ -513,7 +513,7 @@ var allHeroes = [
         "unique_comment": 1
     },
     {
-        "name": "Bellona",
+        "name": "維爾羅娜",
         "chat1": "happy_memory",
         "chat2": "interesting_story",
         "advice": -1,
@@ -540,7 +540,7 @@ var allHeroes = [
         "unique_comment": 3
     },
     {
-        "name": "Blaze Dingo",
+        "name": "烈火汀果",
         "chat1": "self_indulgent",
         "chat2": "food_story",
         "advice": 5,
@@ -567,7 +567,7 @@ var allHeroes = [
         "unique_comment": 2
     },
     {
-        "name": "Blood Blade Karin",
+        "name": "血劍卡琳",
         "chat1": "self_indulgent",
         "chat2": "food_story",
         "advice": 6,
@@ -594,7 +594,7 @@ var allHeroes = [
         "unique_comment": 5
     },
     {
-        "name": "Butcher Corps Inquisitor",
+        "name": "屠殺部隊員",
         "chat1": "advice",
         "chat2": "reality_check",
         "advice": 1,
@@ -621,7 +621,7 @@ var allHeroes = [
         "unique_comment": 6
     },
     {
-        "name": "Captain Rikoris",
+        "name": "先鋒隊長里科黎司",
         "chat1": "belief",
         "chat2": "joyful_memory",
         "advice": 1,
@@ -648,7 +648,7 @@ var allHeroes = [
         "unique_comment": 0
     },
     {
-        "name": "Carmainerose",
+        "name": "卡麥蘿茲",
         "chat1": "dream",
         "chat2": "horror_story",
         "advice": 3,
@@ -675,7 +675,7 @@ var allHeroes = [
         "unique_comment": 0
     },
     {
-        "name": "Carrot",
+        "name": "卡蘿",
         "chat1": "complain",
         "chat2": "advice",
         "advice": 2,
@@ -702,7 +702,7 @@ var allHeroes = [
         "unique_comment": 3
     },
     {
-        "name": "Cartuja",
+        "name": "卡爾圖哈",
         "chat1": "criticism",
         "chat2": "sad_memory",
         "advice": 7,
@@ -729,7 +729,7 @@ var allHeroes = [
         "unique_comment": 0
     },
     {
-        "name": "Cecilia",
+        "name": "賽西莉雅",
         "chat1": "joyful_memory",
         "chat2": "advice",
         "advice": 5,
@@ -756,7 +756,7 @@ var allHeroes = [
         "unique_comment": 1
     },
     {
-        "name": "Celeste",
+        "name": "賽雷斯特",
         "chat1": "food_story",
         "chat2": "comforting_cheer",
         "advice": 2,
@@ -783,7 +783,7 @@ var allHeroes = [
         "unique_comment": 3
     },
     {
-        "name": "Celestial Mercedes",
+        "name": "外太空的玫勒賽德斯",
         "chat1": "belief",
         "chat2": "myth",
         "advice": 3,
@@ -810,7 +810,7 @@ var allHeroes = [
         "unique_comment": -3
     },
     {
-        "name": "Cermia",
+        "name": "傑若米亞",
         "chat1": "heroic_cheer",
         "chat2": "complain",
         "advice": -1,
@@ -837,7 +837,7 @@ var allHeroes = [
         "unique_comment": 3
     },
     {
-        "name": "Challenger Dominiel",
+        "name": "挑戰者多米妮爾",
         "chat1": "heroic_tale",
         "chat2": "dream",
         "advice": 0,
@@ -864,7 +864,7 @@ var allHeroes = [
         "unique_comment": 1
     },
     {
-        "name": "Chaos Sect Axe",
+        "name": "混沌教巨斧大將軍",
         "chat1": "reality_check",
         "chat2": "gossip",
         "advice": 0,
@@ -891,7 +891,7 @@ var allHeroes = [
         "unique_comment": 3
     },
     {
-        "name": "Charles",
+        "name": "查爾斯",
         "chat1": "joyful_memory",
         "chat2": "dream",
         "advice": 4,
@@ -918,7 +918,7 @@ var allHeroes = [
         "unique_comment": 2
     },
     {
-        "name": "Charlotte",
+        "name": "夏綠蒂",
         "chat1": "heroic_cheer",
         "chat2": "advice",
         "advice": 5,
