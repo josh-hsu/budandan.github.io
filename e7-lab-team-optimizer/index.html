@@ -54,13 +54,13 @@
     <div class="container">
         <div class="row text-center">
             <h4>
-                Epic Seven Labyrinth Team Optimizer v1.9 (Luluca)
+                第七史詩迷宮組隊最佳化 v1.9 (作者 Luluca) (翻譯 Josh Hsu)
             </h4>
             <p class='text-center' style='font-size: 0.7em;'>
-                If you find a bug or wish to submit feedback, contact me on discord: <strong class='text-info'>budandan#1947</strong>.
+                如果你找到 bug 請聯絡作者 discord: <strong class='text-info'>budandan#1947</strong>.
             </p>
             <div class="col-md-4 col-md-offset-4">
-                <span id='changelog' style="cursor: pointer;" onclick='toggleChangelog()'><i class="fas fa-caret-right"></i> Show Changelog</span>
+                <span id='changelog' style="cursor: pointer;" onclick='toggleChangelog()'><i class="fas fa-caret-right"></i> 顯示修改記錄</span>
                 <div id="changelog-wrapper" class='text-left' style='display:none;'>
                     <br>
                     <ul>
@@ -80,13 +80,13 @@
         </div>
         <div class="row text-center">
             <div class="col-md-4 col-md-offset-4">
-                <span id='instructions' style="cursor: pointer;" onclick='toggleInstructions()'><i class="fas fa-caret-right"></i> Show Instructions</span>
+                <span id='instructions' style="cursor: pointer;" onclick='toggleInstructions()'><i class="fas fa-caret-right"></i> 顯示導引</span>
                 <div id="instructions-wrapper" class='text-left' style='display:none;'>
                     <br>
                     <p>
                         <ul>
-                            <li>Select a hero on the left and click on "Add Hero to Roster" to create a roster of any size more than four heroes. Click on "Calculate" to see the teams with the highest morale.</li>
-                            <li>You may lock a hero using the <i class="fas fa-lock-open"></i> icon. Locking a hero will make sure your teams will always contain the locked heroes. You can lock up to three heroes.</li>
+                            <li>選擇左列的英雄並點擊"加入清單"來建立至少四位英雄的清單. 點擊 "計算" 來計算哪一隊有最高士氣．</li>
+                            <li>你可以用 <i class="fas fa-lock-open"></i> 圖示來鎖定英雄. 鎖定的英雄會出現在每一隊中. 你最多可以鎖定三位英雄.</li>
                         </ul>
                     </p>
                 </div>
@@ -95,13 +95,13 @@
         <br>
         <div class="row">
             <div class="col-md-4 col-md-offset-1">
-                <label class='control-label'>Select Heroes:</label>
+                <label class='control-label'>選擇英雄:</label>
                 <select id="heroes-to-add" class='form-control' multiple="multiple"></select>
                 <p id='error-message' class='text-danger'></p>
             </div>
             <div class="col-md-2 text-center">
                 <br>
-                <button style='margin-top: 10px;' onclick='addHeroToRoster()' class='btn btn-success btn-sm'>Add Heroes to Roster</button>
+                <button style='margin-top: 10px;' onclick='addHeroToRoster()' class='btn btn-success btn-sm'>加入清單</button>
             </div>
             <div class="col-md-4">
                 <br>
@@ -118,14 +118,14 @@
         <br>
         <div class="row">
             <div class="col-md-2 col-md-offset-5">
-                <label class='control-label'>Max Number of Teams:</label>   
+                <label class='control-label'>最多顯示隊伍數量:</label>   
                 <input type='number' value='10' class="form-control" id="num-of-teams" />
             </div>
         </div>
         <br>
         <br>
         <div class='row text-center'>
-            <button class='btn btn-info' id='calc-btn' onclick="calculateOptimalTeam()" disabled>Calculate</button>
+            <button class='btn btn-info' id='calc-btn' onclick="calculateOptimalTeam()" disabled>計算</button>
         </div>
         <br>
         <br>
@@ -135,14 +135,14 @@
         <div class="row text-center">
             <div class="col-md-10 col-md-offset-1" id="results-wrapper">
                 <div class="panel panel-default text-center">
-                    <div class="panel-heading">Optimized Teams</div>
+                    <div class="panel-heading">最佳組合</div>
                     <div class="panel-body">
                         <table class='table table-striped'>
                             <tr>
                                 <th></th>
-                                <th class='text-center'>Team</th>
-                                <th class='text-center'>Camp Option</th>
-                                <th class='text-center'>Score</th>
+                                <th class='text-center'>隊伍</th>
+                                <th class='text-center'>對話選項</th>
+                                <th class='text-center'>分數</th>
                             </tr>
                             <tbody id='results'>
 
@@ -158,16 +158,16 @@
             <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Here's a List of the Best Fourth Heroes for Your Team...</h4>
+                <h4 class="modal-title">這是最佳四人組..</h4>
             </div>
             <div class="modal-body">
                 <p class='text-danger' style='font-size: 0.8em;'>You cannot have a Specialty Change hero and its original form on the same team. Please disregard these teams; removing them is part of my future work on this calc.</p>
                 <table class='table table-striped'>
                     <tr>
                         <th></th>
-                        <th>Team</th>
-                        <th>Camp Option</th>
-                        <th>Score</th>
+                        <th>隊伍</th>
+                        <th>對話選項</th>
+                        <th>分數</th>
                     </tr>
                     <tbody id='find-fourth-target'>
 
