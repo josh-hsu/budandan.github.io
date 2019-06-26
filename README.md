@@ -1,5 +1,3 @@
 # budandan.github.io
-Github Pages for Daniel Ferolino
-
-Forked for translation to Tranditional Chinese for friends.
-Feel free to ask me to remove this if you don't want this.
+Github Pages for Daniel Ferolino who take fully credit on this page.
+My work is only translation of Traditional Chinese for friends
