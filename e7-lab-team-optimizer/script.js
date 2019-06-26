@@ -16,7 +16,7 @@ $(document).ready(function () {
     // make select2
     $.fn.select2.defaults.set("width", null);
     $('#heroes-to-add').select2({
-        placeholder: "Type your hero name",
+        placeholder: "輸入英雄名稱，或點一下出現選單",
         theme: "bootstrap"
     });
 });
@@ -56,7 +56,7 @@ function addHeroToRoster() {
     let roster = document.getElementById('roster-output');
     for (const newHero of newHeros) {
         if (currentRoster.includes(newHero.text)) {
-            setErrorMessage("Hero already exists in roster.")
+            setErrorMessage("英雄已經在清單內了")
         } else {
             let sid = newHero.text.replace(/ /g, '_');
             roster.innerHTML += `
@@ -83,7 +83,7 @@ function addHeroToRoster() {
 
 function lockHero(hero, sid) {
     if (lockedHeroes.length >= 3) {
-        setLockErrorMessage("You can only lock up to three heroes.");
+        setLockErrorMessage("你最多只能鎖定三位英雄");
     } else {
         $('#lock-' + sid).html(`<i class="fas fa-lock" style='cursor: pointer; color: #33E3FF;' onclick='unlockHero("${hero}", "${sid}")'></i>`);
         lockedHeroes.push(hero);
@@ -123,10 +123,10 @@ function checkForThreeLockedHeroes() {
     if (lockedHeroes.length >= 3) {
         $("#add-fourth-hero-prompt").html(`
             <p class='text-center'>
-                You have three heroes locked. Would you like to find the best fourth hero out of all heroes?
+                你有三個鎖定的英雄，你想找看看所有英雄中最佳的第四位英雄嗎？
                 <br>
                 <br>
-                <button class='btn btn-primary btn-sm' data-toggle="modal" data-target="#find-fourth-modal" onclick='findFourth()'>Find My Fourth!</button>
+                <button class='btn btn-primary btn-sm' data-toggle="modal" data-target="#find-fourth-modal" onclick='findFourth()'>找第四個!</button>
             </p>
         `)
     } else {
