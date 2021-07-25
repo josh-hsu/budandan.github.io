@@ -1,4 +1,5 @@
-var allHeroes = [
+var allHeroes = [];
+var heroes_2019 = [
     {
         "name": "雅卡泰絲",
         "chat1": "安慰助陣",
@@ -5076,3 +5077,4 @@ var allHeroes = [
         "冒險故事": -1
     },
 ];
+allHeroes = allHeroes.concat(heroes_2019);
