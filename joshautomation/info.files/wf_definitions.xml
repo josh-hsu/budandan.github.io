@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+   Copyright (C) 2020-2022 The Josh Tool Project. All rights reserved
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+
+<!--
+   Josh Automation Game Definition XML file format
+
+   1. single point   <screenpoint name="pointName">r,g,b,a,x,y,o</screenpoint>
+   2. single coord   <screencoord name="coordName">x,y,o</screencoord>
+   3. single color   <screencolor name="colorName">r,g,b,a</screencolor>
+   4. point set      <screenpoints name="pointSetName" sapa="true">
+                         <screenpoint>r,g,b,a,x,y,o</screenpoint>
+                         ...
+                         <screenpoint>r,g,b,a,x,y,o</screenpoint>
+                     </screenpoints>
+   5. coord set      <screencoords name="coordSetName">
+                         <screenpoint>x,y,o</screenpoint>
+                         ...
+                         <screenpoint>x,y,o</screenpoint>
+                     </screencoords>
+   6. color set      <screencolors name="colorSetName">
+                         <screencolor>r,g,b,a</screencolor>
+                         ...
+                         <screencolor>r,g,b,a</screencolor>
+                     </screencolors>
+
+   NOTE: integer value can be represented as decimal or hexadecimal (started with 0x).
+         orientation can be represented as Portrait/Landscape, P(p)/L(l) or 0/1.
+   NOTE: no space is allowed.
+   NOTE: sapa (See Any Press Any) is only available for screenpoints
+-->
+
+<!--
+   if you like to modify it, make sure to update version number in following manners
+   Add a floating number value between 0.001 and 0.009 to current version
+   1.53 -> 1.531  (OK, add 0.001)
+   1.53 -> 1.5310 (OK, add 0.001)
+   1.53 -> 1.5311 (OK, add 0.0011)
+   1.53 -> 1.532  (OK, add 0.002)
+   1.53 -> 1.54   (NOT OK, add 0.01)
+   This number will be considered as floating number so don't use another dots
+-->
+
+<definitions version="1.021">
+    <defset resolution="1080x2340" orientation="portrait" sapaTimeout="60" sapaInterval="400">
+        <screenpoints name="pResult" sapa="true">
+            <screenpoint>46,196,182,0xFF,677,2016,P</screenpoint>
+            <screenpoint>255,223,62,0xFF,549,341,P</screenpoint>
+            <screenpoint>255,251,166,0xFF,549,317,P</screenpoint>
+            <screenpoint>75,52,3,0xFF,540,326,P</screenpoint>
+        </screenpoints>
+
+        <screenpoints name="pResultSpeedUp" sapa="true" randomPress="300x200">
+            <screenpoint>255,223,62,0xFF,549,341,P</screenpoint>
+            <screenpoint>255,251,166,0xFF,549,317,P</screenpoint>
+            <screenpoint>75,52,3,0xFF,540,326,P</screenpoint>
+        </screenpoints>
+
+        <screenpoints name="pReadyUnchecked" sapa="true">
+            <screenpoint>224,224,224,0xFF,383,1596,P</screenpoint>
+            <screenpoint>204,204,204,0xFF,365,1648,P</screenpoint>
+            <screenpoint>255,255,255,0xFF,328,1647,P</screenpoint>
+        </screenpoints>
+
+        <screenpoints name="pReadyUnchecked2" sapa="true">
+            <screenpoint>224,224,224,0xFF,383,1590,P</screenpoint>
+            <screenpoint>224,224,224,0xFF,405,1629,P</screenpoint>
+            <screenpoint>255,159,28,0xFF,83,657,P</screenpoint>
+        </screenpoints>
+
+        <screenpoints name="pChallenge" sapa="true">
+            <screenpoint>255,159,28,0xFF,383,1841,P</screenpoint>
+            <screenpoint>255,159,28,0xFF,599,1840,P</screenpoint>
+            <screenpoint>255,255,255,0xFF,643,1836,P</screenpoint>
+        </screenpoints>
+
+        <screenpoints name="pChallenge2" sapa="true">
+            <screenpoint>255,159,28,0xFF,605,1809,P</screenpoint>
+            <screenpoint>255,159,28,0xFF,731,1882,P</screenpoint>
+            <screenpoint>255,159,28,0xFF,350,1862,P</screenpoint>
+        </screenpoints>
+
+        <screenpoints name="pChallengeTeam2" sapa="true">
+            <screenpoint>255,159,28,0xFF,383,1591,P</screenpoint>
+            <screenpoint>255,159,28,0xFF,102,642,P</screenpoint>
+            <screenpoint>255,159,28,0xFF,446,658,P</screenpoint>
+            <screenpoint>255,159,28,0xFF,781,654,P</screenpoint>
+        </screenpoints>
+
+        <screenpoints name="pChallengeTeam" sapa="true">
+            <screenpoint>255,159,28,0xFF,447,1588,P</screenpoint>
+            <screenpoint>255,159,28,0xFF,727,1599,P</screenpoint>
+            <screenpoint>255,255,255,0xFF,640,1592,P</screenpoint>
+        </screenpoints>
+
+        <screenpoints name="pConnectionError" sapa="true">
+            <screenpoint>46,196,182,0xFF,457,1455,P</screenpoint>
+            <screenpoint>221,221,221,0xFF,221,1351,P</screenpoint>
+            <screenpoint>247,247,248,0xFF,142,1407,P</screenpoint>
+        </screenpoints>
+
+        <screenpoints name="pTitlePage" sapa="true">
+            <screenpoint>28,70,146,0xFF,394,369,P</screenpoint>
+            <screenpoint>28,70,146,0xFF,450,508,P</screenpoint>
+            <screenpoint>28,70,146,0xFF,709,511,P</screenpoint>
+            <screenpoint>17,8,13,0xFF,652,492,P</screenpoint>
+        </screenpoints>
+
+        <screenpoints name="pReconnect" sapa="true">
+            <screenpoint>46,196,182,0xFF,658,1451,P</screenpoint>
+            <screenpoint>234,53,83,0xFF,458,1428,P</screenpoint>
+            <screenpoint>250,250,250,0xFF,270,1276,P</screenpoint>
+        </screenpoints>
+    </defset>
+
+    <!-- Not support for 720p devices, this is a demo defset -->
+    <defset resolution="720x1280">
+        <screenpoint name="test">1,1,1,1,333,333,L</screenpoint>
+    </defset>
+</definitions>
